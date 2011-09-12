@@ -23,7 +23,7 @@ The application can be run by pointing a static file server to the root of the
 repository.
 
 Configuration
---------------
+---------------
 All the configuration is managed either via constants set in demo.ConfigManager
 class or via url parameters. The required paramaters are:
 
