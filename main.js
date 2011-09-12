@@ -450,6 +450,9 @@ demo.widget.Toppages.prototype.onEmbedlyData_ = function(data) {
      * @type {demo.widget.Page}
      */
     var el = this.pages_[page["path"]];
+    if (!page["thumbnail_url"]) {
+      continue;
+    }
     if (!el) {
       el = new demo.widget.Page(this.host_, page["path"], page["title"], page["visitors"],  page["thumbnail_url"], page["html"]);
       $('#container').isotope('insert', $(el.getElement()));
